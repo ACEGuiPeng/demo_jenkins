@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="testproj" parallel="true" >
+    <test name="testDemo1">
+        <packages>
+            <package name="com.linco.server.web"/>
+        </packages>
+        <classes>
+            <class name="TestDemoTest"/>
+        </classes>
+    </test>
+
+    <listeners>
+        <listener class-name="org.testng.reporters.XMLReporter"/>
+    </listeners>
+</suite>
